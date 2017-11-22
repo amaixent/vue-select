@@ -1,4 +1,5 @@
 <style>
+  /* COMPONENT CUSTOM */
   .v-select {
     position: relative;
     font-family: sans-serif;
@@ -253,7 +254,7 @@
 <template>
   <div class="dropdown v-select" :class="dropdownClasses">
     <div ref="toggle" @mousedown.prevent="toggleDropdown" class="dropdown-toggle">
-      <div class="form--tag-options-selected">      
+      <div class="form--tag-options-selected">
         <span class="selected-tag" v-for="option in valueAsArray" v-bind:key="option.index">
           {{ getOptionLabel(option) }}
           <button v-if="multiple" @click="deselect(option)" type="button" class="close">
@@ -261,8 +262,8 @@
           </button>
         </span>
       </div>
-      
-      <div class="form--tag-input_container">      
+
+      <div class="form--tag-input_container">
         <input
                 ref="search"
                 v-model="search"

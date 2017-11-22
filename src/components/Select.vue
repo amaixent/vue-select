@@ -1,5 +1,5 @@
 <style>
-  /* COMPONENT CUSTOM */
+  /* CUSTOM MODULE FOR MY TOOLS */
   .v-select {
     position: relative;
     font-family: sans-serif;
